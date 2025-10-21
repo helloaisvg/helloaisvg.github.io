@@ -1,10 +1,37 @@
 title: 
 description: 
-theme: minima
+url: https://jiahuihuang.me
+baseurl: ""
+remote_theme: mmistakes/minimal-mistakes
 markdown: kramdown
 plugins:
+  - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
+
+locale: zh-CN
+permalink: /:categories/:title/
+
+author:
+  name: 
+  avatar: 
+  bio: 
+  links: []
+
+paginate: 5
+paginate_path: /page:num/
+
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+include:
+  - _pages
+
 exclude:
   - README.md
   - Gemfile
