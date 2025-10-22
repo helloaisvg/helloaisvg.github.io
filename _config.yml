@@ -1,5 +1,5 @@
-title: 
-description: 
+title: Jiahui Huang
+description: Personal Website
 url: https://jiahuihuang.me
 baseurl: ""
 remote_theme: mmistakes/minimal-mistakes
@@ -13,7 +13,7 @@ locale: zh-CN
 permalink: /:categories/:title/
 
 author:
-  name: 
+  name: Jiahui Huang
   avatar: 
   bio: 
   links: []
