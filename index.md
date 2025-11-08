@@ -1,6 +1,6 @@
 ---
 layout: home
-author_profile: false
+author_profile: true
 ---
 
 This is a placeholder homepage. Content will be added here.

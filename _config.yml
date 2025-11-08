@@ -14,12 +14,23 @@ permalink: /:categories/:title/
 
 author:
   name: Jiahui Huang
-  avatar: 
-  bio: 
+  avatar: /images/avatar.png
+  bio: "Personal website placeholder - content coming soon"
+  location: "Shanghai, China"
+  email: "1159498235@qq.com"
   links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/helloaisvg"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "#"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "#"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:"
+      url: "mailto:1159498235@qq.com"
     - label: "Blog"
       icon: "fas fa-link"
       url: "https://helloaisvg.cn"
