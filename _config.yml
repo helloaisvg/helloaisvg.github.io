@@ -33,7 +33,7 @@ author:
       url: "mailto:1159498235@qq.com"
     - label: "Blog"
       icon: "fas fa-link"
-      url: "https://helloaisvg.cn"
+      url: "https://helloaisvg.cn/"
 
 paginate: 5
 paginate_path: /page:num/
