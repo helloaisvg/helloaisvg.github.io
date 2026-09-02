@@ -1,0 +1,52 @@
+title: Jiahui Huang
+description: Personal Website
+url: https://jiahuihuang.me
+baseurl: ""
+remote_theme: mmistakes/minimal-mistakes
+markdown: kramdown
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+locale: en
+permalink: /:categories/:title/
+
+author:
+  name: Jiahui Huang
+  avatar: /images/avatar.png
+  bio: "MSc(Eng) in Robotics and Intelligent Systems, HKU."
+  emails:
+    - "jiahuihuang@connect.hku.hk"
+  location: "Hong Kong, China"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/helloaisvg"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/%E5%AE%B6%E8%BE%89-%E9%BB%84-0b6094390/"
+
+atom_feed:
+  hide: true
+
+paginate: 5
+paginate_path: /page:num/
+
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+

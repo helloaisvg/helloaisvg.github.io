@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jiahui Huang - CV</title>
+<style>
+  @page { size: A4; margin: 10mm 11mm 10mm 11mm; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+    font-size: 9.2pt; line-height: 1.28; color: #1a1a1a; margin: 0;
+  }
+  h1 { font-size: 16pt; margin: 0 0 1px 0; letter-spacing: 0.5px; }
+  .contact { font-size: 9pt; color: #444; border-bottom: 1.2px solid #333; padding-bottom: 4px; margin-bottom: 5px; }
+  h2 { font-size: 10.8pt; margin: 8px 0 3px 0; padding-bottom: 1px; border-bottom: 0.7px solid #999; text-transform: uppercase; letter-spacing: 0.5px; }
+  h3 { font-size: 9.8pt; margin: 5px 0 0 0; }
+  p { margin: 1px 0; }
+  ul { margin: 1px 0 2px 0; padding-left: 13px; }
+  li { margin-bottom: 2px; }
+  .meta { color: #555; font-size: 9.2pt; }
+  .tag { font-size: 8.8pt; color: #666; }
+  a { color: #2556a5; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>JIAHUI HUANG <span style="font-size:11pt;color:#555">(黄家辉)</span></h1>
+<div class="contact">
+  jiahuihuang@connect.hku.hk &middot; <a href="https://jiahuihuang.me">jiahuihuang.me</a> &middot; <a href="https://github.com/helloaisvg">github.com/helloaisvg</a>
+</div>
+
+<h2>Research Interests</h2>
+<p>Multi-Agent Learning &middot; Reinforcement Learning &middot; Generative Models &middot; Agentic AI</p>
+
+<h2>Education</h2>
+<ul>
+  <li><b>M.Sc. in Engineering (Robotics and Intelligent Systems)</b>, The University of Hong Kong, 2026.9 - 2027.6 (expected)</li>
+  <li><b>B.Eng. in Artificial Intelligence</b>, Chongqing University, 2022.9 - 2026.6 &middot; GPA 3.5/4.0
+    <br><span class="meta">B.Eng. Thesis: <i>Design and Implementation of an LLM-based Enterprise Fundamental Analysis Agent</i></span></li>
+</ul>
+
+<h2>Publications &amp; Manuscripts</h2>
+<ul>
+  <li><b>Risk-sensitive reinforcement learning with generative value distributions</b> <span class="tag">[NeurIPS 2026, under review] &middot; first author</span>
+    <br><span class="meta">Models the full return distribution via conditional flow matching and jointly trains mean- and CVaR-optimized actors on a shared flow-based critic; competitive reward with 7 baselines and a substantially lower crash rate.</span></li>
+  <li><b>Cause-specific local repair for scalable multi-agent path finding</b> <span class="tag">[AAAI 2027, under review] &middot; first author</span>
+    <br><span class="meta">Propose a local-repair framework that decomposes the repairable slack of a MAPF solution into goal-lock, detour and precedence causes, with a dedicated repair operator per cause. 100% solve rate on 5,850 MovingAI instances across 10 map types, ~2.0 s average runtime; at a matched 2 s budget, excess sum-of-costs (SoC) is 5.1 percentage points below LaCAM3.</span></li>
+  <li>Three additional first-author manuscripts under review at AAAI 2027: generative experience replay for continual off-policy RL; robot controller interface calibration; distributionally robust learning under calibrated shifts.</li>
+</ul>
+
+<h2>Research Experience</h2>
+<ul>
+  <li><b>Algorithm Engineer, Shanghai Xianruan Information Technology</b> <span class="meta">04/2025 - 06/2025</span>
+    <ul>
+      <li>Built the core solver module of a multi-robot warehouse path planning system: a Python ECBS implementation with task allocation, designed for production-scale warehouse deployment.</li>
+      <li>Tuned the conflict-detection mechanism and heuristics to product-scale instances: +40% solve speed, +30% throughput, under high-concurrency workloads.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Research Projects</h2>
+<h3>Agentic AI</h3>
+<ul>
+  <li><b>Vellorys</b> &mdash; an LLM-based multi-agent research system for equity analysis across CN/HK/US/crypto markets. Designed a LangGraph-based agent workflow with upfront tool evidence registration, formal argumentation for conflict resolution, and a PPO router for adaptive route selection. 1.9% hallucination rate, 0.960 fact accuracy on 300 FinDebate-Eval samples. <a href="https://vellorys.com">vellorys.com</a></li>
+</ul>
+<h3>Multi-Agent Path Finding</h3>
+<ul>
+  <li><b>GCSS</b> &mdash; a guided large-scale MAPF solver: scatter-guided multi-strategy PIBT with automatic swap handling; decentralized priority-based execution that scales to 500-1000 agents in sub-second to seconds. 87.5% solve rate across 33 MovingAI official maps, SoC within 2% of LaCAM3.</li>
+  <li><b>DiffRefine</b> &mdash; learning-based MAPF trajectory refinement: SE(2)-equivariant GNN plus Mamba sequence model, B-spline parameterization; complete training/eval pipeline with test suite.</li>
+  <li>Classical implementations: <a href="https://github.com/helloaisvg/A-star">A*</a>, <a href="https://github.com/helloaisvg/focalA_star">Focal A*</a>, <a href="https://github.com/helloaisvg/SIPP">SIPP</a>, <a href="https://github.com/helloaisvg/MAPF">CBS</a> in Python and C++.</li>
+</ul>
+<h3>Robot Learning</h3>
+<ul>
+  <li><b>VLA: Rectified Flow Vision-Language-Action</b> &mdash; one-step generation at 170 Hz; in our evaluation, 1-step MSE is 98.3% lower than DDPM.</li>
+  <li><b>Robotic deployments</b> &mdash; navigation and control on Scout Mini, camera-IMU calibration (Kalibr, 1.10 px), LiDAR odometry (NDT/ICP/GN-ICP). <a href="https://github.com/helloaisvg/Planning-control">Planning-control</a> &middot; <a href="https://github.com/helloaisvg/Camera-calibration">Camera-calibration</a> &middot; <a href="https://github.com/helloaisvg/lidar">lidar</a></li>
+</ul>
+
+<h2>Skills</h2>
+<p>
+<b>Programming:</b> Python, C++, Rust, Go, SQL, LaTeX<br>
+<b>ML / RL:</b> PyTorch, SAC, PPO, DQN, distributional RL, diffusion and flow matching, GNNs, Mamba<br>
+<b>Multi-Agent / Planning:</b> MAPF, A*, CBS, ECBS, SIPP, PIBT<br>
+<b>Robotics:</b> ROS, MuJoCo, Gazebo, PCL, Kalibr
+</p>
+
+</body>
+</html>

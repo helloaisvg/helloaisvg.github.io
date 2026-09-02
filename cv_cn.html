@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>黄家辉 - 个人简历</title>
+<style>
+  @page { size: A4; margin: 10mm 11mm 10mm 11mm; }
+  body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Songti SC", "Helvetica Neue", sans-serif;
+    font-size: 9.2pt; line-height: 1.28; color: #1a1a1a; margin: 0;
+  }
+  h1 { font-size: 16pt; margin: 0 0 1px 0; letter-spacing: 1px; }
+  .contact { font-size: 9.2pt; color: #444; border-bottom: 1.2px solid #333; padding-bottom: 4px; margin-bottom: 5px; }
+  h2 { font-size: 11pt; margin: 8px 0 3px 0; padding-bottom: 1px; border-bottom: 0.7px solid #999; letter-spacing: 1px; }
+  h3 { font-size: 10pt; margin: 5px 0 0 0; }
+  p { margin: 1px 0; }
+  ul { margin: 1px 0 2px 0; padding-left: 13px; }
+  li { margin-bottom: 2px; }
+  .meta { color: #555; font-size: 9.4pt; }
+  .en { font-size: 9.4pt; color: #333; }
+  .tag { font-size: 9pt; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>黄家辉 <span style="font-size:11pt;color:#555">JIAHUI HUANG</span></h1>
+<div class="contact">
+  jiahuihuang@connect.hku.hk &middot; <a href="https://jiahuihuang.me">jiahuihuang.me</a> &middot; <a href="https://github.com/helloaisvg">github.com/helloaisvg</a>
+</div>
+
+<h2>研究方向</h2>
+<p>多智能体学习 · 强化学习 · 生成式模型 · 智能体 AI</p>
+
+<h2>教育背景</h2>
+<ul>
+  <li><b>香港大学</b>，工程学硕士（MSc(Eng)，<span class="en">Robotics and Intelligent Systems</span>），2026.9 - 2027.6（预计）</li>
+  <li><b>重庆大学</b>，人工智能专业，工学学士，2022.9 - 2026.6 &middot; GPA 3.5/4.0
+    <br><span class="meta">毕业论文：《基于 LLM 的企业基本面分析 Agent 设计与实现》</span></li>
+</ul>
+
+<h2>论文与学术稿件</h2>
+<ul>
+  <li><b>生成式价值分布的风险敏感强化学习</b> <span class="tag">[NeurIPS 2026 在审] &middot; 一作</span>
+    <br><span class="meta">用条件流匹配建模完整回报分布，在共享流式 critic 上联合训练均值与 CVaR 双目标 actor；奖励与 7 个基线相当，崩溃率大幅降低。</span></li>
+  <li><b>可扩展多智能体路径求解的因果定位式局部修复</b> <span class="tag">[AAAI 2027 在审]</span>
+    <br><span class="meta">提出局部修复框架：把 MAPF 解的可修复冗余按成因分成 goal-lock、detour、precedence 三类，每类配专用修复算子。10 类 MovingAI 地图、5850 个实例上 100% 求解，平均约 2 秒；同等 2 秒预算下，多余 sum-of-costs (SoC) 比 LaCAM3 低 5.1 个百分点。</span></li>
+  <li>另有 3 篇一作稿件 <span class="tag">[AAAI 2027 在审]</span>：持续离策略 RL 的生成式经验回放；机器人控制器接口校准；基于校准漂移的分布鲁棒学习。</li>
+</ul>
+
+<h2>研究经历</h2>
+<ul>
+  <li><b>上海先软信息技术有限公司 · 算法工程师</b> <span class="meta">2025.04 - 2025.06</span>
+    <ul>
+      <li>负责多机器人仓库路径规划系统的核心求解器模块：ECBS 的 Python 实现加任务分配，面向生产规模的仓库部署设计。</li>
+      <li>把冲突检测机制与启发式函数调优到产品规模：求解速度 +40%，吞吐 +30%，高并发负载下稳定。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>研究项目</h2>
+<h3>智能体 AI</h3>
+<ul>
+  <li><b>Vellorys</b> &mdash; 面向 A 股、港股、美股和加密市场的 LLM 多智能体研究系统。设计了 LangGraph 智能体工作流，工具证据前置注册、形式化论证解决冲突、PPO 路由自适应选线。300 条样本上幻觉率 1.9%，事实准确率 0.960。<a href="https://vellorys.com">vellorys.com</a></li>
+</ul>
+<h3>多智能体路径规划（MAPF）</h3>
+<ul>
+  <li><b>GCSS</b> &mdash; 大规模 MAPF 求解器，围绕预先算好的 Scatter 路径展开；每一步尝试多种 PIBT 策略，保留最优结果，并自动处理路径交换。33 张 MovingAI 官方地图求解率 87.5%，500-1000 智能体亚秒到秒级求解，SoC 与 LaCAM3 的差距在 2% 以内。</li>
+  <li><b>DiffRefine</b> &mdash; 用 SE(2) 等变图网络加 Mamba 序列模型来精化 MAPF 轨迹，轨迹用 B 样条表示；配套完整训练、评估管线和测试套件。</li>
+  <li>经典算法手写实现：<a href="https://github.com/helloaisvg/A-star">A*</a>、<a href="https://github.com/helloaisvg/focalA_star">Focal A*</a>、<a href="https://github.com/helloaisvg/SIPP">SIPP</a>、<a href="https://github.com/helloaisvg/MAPF">CBS</a>（Python/C++）。</li>
+</ul>
+<h3>机器人学习</h3>
+<ul>
+  <li><b>VLA：基于整流流的视觉-语言-动作模型</b> &mdash; 一步生成，170 Hz 推理；我们的评测下 1 步 MSE 比 DDPM 低 98.3%。</li>
+  <li><b>机器人部署</b> &mdash; Scout Mini 导航与控制，相机-IMU 标定（Kalibr，1.10 px），激光雷达里程计（NDT/ICP/GN-ICP）。<a href="https://github.com/helloaisvg/Planning-control">Planning-control</a> &middot; <a href="https://github.com/helloaisvg/Camera-calibration">Camera-calibration</a> &middot; <a href="https://github.com/helloaisvg/lidar">lidar</a></li>
+</ul>
+
+<h2>技能</h2>
+<p>
+<b>编程：</b>Python、C++、Rust、Go、SQL、LaTeX<br>
+<b>强化学习：</b>PPO、SAC、DQN、分布型 RL<br>
+<b>生成式/深度学习：</b>扩散、流匹配、GNN、Mamba、PyTorch<br>
+<b>多智能体/规划：</b>MAPF、A*、CBS、ECBS、SIPP、PIBT<br>
+<b>机器人：</b>ROS、MuJoCo、Gazebo、PCL、Kalibr
+</p>
+
+</body>
+</html>
